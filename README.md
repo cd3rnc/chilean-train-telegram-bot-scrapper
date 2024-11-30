@@ -32,5 +32,12 @@ In the `main.py` file, you can customize the origin (`origen`) and destination (
 origen = "Buin"
 destino = "Estación Central"
 ```
+### Setting up .env file
+Remember to create your .env file, with the following data:
+
+```
+BOT_TOKEN=<your_bot_token>
+CHAT_ID=<your_chat_id>
+``` 
 
 ![Example](./example.jpeg)
