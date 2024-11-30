@@ -111,6 +111,8 @@ def df_as_image(df):
 origen = 'Buin'
 destino = 'Estación Central'
 
+
+####to work############
 tabla_datos = extract_data(origen, destino)
 if tabla_datos:
     df = clean_table(tabla_datos)
@@ -121,4 +123,22 @@ if tabla_datos:
     enviar_imagen_telegram(bot_token, chat_id, imagen)
 else:
     print("No se pudo extraer información de la tabla.")
+
+######back to home :)############
+tabla_datos = extract_data(destino, origen)
+
+if tabla_datos:
+    df = clean_table(tabla_datos)
+
+    imagen = df_as_image(df)
+
+    enviar_mensaje_telegram(bot_token, chat_id, f'Trenes {destino} a {origen}')
+    enviar_imagen_telegram(bot_token, chat_id, imagen)
+else:
+    print("No se pudo extraer información de la tabla.")
+
+
+
+
+
 
