@@ -32,3 +32,4 @@ In the `main.py` file, you can customize the origin (`origen`) and destination (
 origen = "Buin"
 destino = "Estación Central"
 
+![Example](./example.jpeg)
