@@ -40,4 +40,14 @@ BOT_TOKEN=<your_bot_token>
 CHAT_ID=<your_chat_id>
 ``` 
 
+### Setting up the docker
+
+```
+docker build -t selenium-web-scrapper-efe .
+```
+```
+docker run -d selenium-web-scrapper-efe:latest
+```
+### Output example
+
 ![Example](./example.jpeg)
